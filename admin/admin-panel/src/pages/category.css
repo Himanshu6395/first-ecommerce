@@ -1,0 +1,201 @@
+/* Container */
+.category-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.category-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.category-container h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #374151;
+}
+
+/* Form */
+.category-form {
+  display: flex;
+  gap: 12px;
+}
+
+.category-form input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Button */
+.category-form button {
+  padding: 10px 18px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.category-form button:hover {
+  background: #1d4ed8;
+}
+
+.category-form button:active {
+  transform: scale(0.97);
+}
+
+/* Divider */
+.category-container hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Category List */
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Empty state */
+.category-empty {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+/* Card container */
+.parent {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.subParent {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 25px;
+}
+
+/* Form layout */
+.subCategory_form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* Inputs & select */
+.subCategory_form input[type="text"],
+.subCategory_form select {
+  width: 95%;
+  padding: 11px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  background: #ffffff;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.subCategory_form select {
+  cursor: pointer;
+}
+
+/* Focus state */
+.subCategory_form input[type="text"]:focus,
+.subCategory_form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+/* Checkbox row */
+.subCategory_form label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.subCategory_form input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Submit button */
+.subCategory_form button {
+  margin-top: 10px;
+  padding: 12px 0;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.subCategory_form button:hover {
+  background: #1d4ed8;
+}
+
+.subCategory_form button:active {
+  transform: scale(0.97);
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .parent {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+}

@@ -1,0 +1,104 @@
+/* ===== SIDEBAR ===== */
+.filter-sidebar {
+  width: 260px;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+.filter-heading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+  text-transform: uppercase;
+}
+
+/* ===== COMMON SECTION ===== */
+.filter-section {
+  margin-bottom: 22px;
+}
+
+.filter-section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+/* ========================= */
+/* 🔍 SEARCH FILTER */
+/* ========================= */
+.filter-search-input {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 13px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.filter-search-input::placeholder {
+  color: #999;
+}
+
+.filter-search-input:focus {
+  border-color: #2874f0; /* Flipkart blue */
+}
+
+/* ========================= */
+/* 📂 CATEGORY FILTER */
+/* ========================= */
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.filter-option input {
+  cursor: pointer;
+}
+
+.filter-option:hover {
+  color: #2874f0;
+}
+
+.filter-option input:checked + span {
+  font-weight: 600;
+  color: #2874f0;
+}
+
+/* ========================= */
+/* 💰 PRICE FILTER */
+/* ========================= */
+.price-range {
+  width: 100%;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.price-value {
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+@media (max-width: 768px) {
+  .filter-sidebar {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}

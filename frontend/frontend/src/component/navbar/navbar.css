@@ -1,0 +1,222 @@
+/* ---------- NAVBAR MAIN ---------- */
+.main-navbar {
+  width: 100%;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Scroll shadow effect */
+.main-navbar.scrolled {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- LOGO ---------- */
+.nav-logo {
+  font-size: 32px;
+  font-weight: 800;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff4d4d, #ff9900);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% { filter: drop-shadow(0 0 5px #ff4d4d); }
+  100% { filter: drop-shadow(0 0 12px #ff9900); }
+}
+
+/* ---------- MENU ---------- */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu li {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: #ff4d4d;
+  transition: width 0.3s;
+  border-radius: 5px;
+}
+
+.nav-menu li:hover::after {
+  width: 100%;
+}
+
+/* ---------- SEARCH BOX ---------- */
+.nav-search input {
+  padding: 10px 14px;
+  width: 200px;
+  border-radius: 25px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-search input:focus {
+  width: 280px;
+  border-color: #ff4d4d;
+  box-shadow: 0 0 8px rgba(255, 77, 77, 0.4);
+}
+
+/* ---------- RIGHT SECTION ---------- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ---------- BUTTONS ---------- */
+.nav-buttons button {
+  padding: 10px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.25s;
+}
+
+.login-btn {
+  background: white;
+  border: 2px solid #ff4d4d;
+  color: #ff4d4d;
+}
+
+.login-btn:hover {
+  background: #ff4d4d;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.register-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.register-btn:hover {
+  background: #ff3333;
+  transform: translateY(-3px);
+}
+
+.logout-btn {
+  background: #000;
+  color: white;
+}
+
+.logout-btn:hover {
+  transform: translateY(-3px);
+  background: #333;
+}
+
+/* ---------- USER AVATAR ---------- */
+.nav-user .user-circle {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #ff4d4d, #ff9900);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 3px 10px rgba(255, 77, 77, 0.5);
+}
+
+.nav-user .user-circle:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Guest avatar */
+.nav-user .guest {
+  background: #ddd;
+  color: #444;
+  box-shadow: none;
+}
+.nav-buttons{
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+
+
+.main-navbar {
+  display: flex;
+  align-items: center;
+  padding: 12px 30px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+  gap: 25px;
+  position: relative;
+}
+
+.nav-menu > li {
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  list-style: none;
+  padding: 10px 0;
+  width: 150px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #f3f3f3;
+}
+.shop-link{
+  list-style: none;
+  font-weight:bold;
+  font-size: 1rem;
+}

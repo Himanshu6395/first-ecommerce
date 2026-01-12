@@ -1,0 +1,48 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff7a7a, #ff4747);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer-links h4 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #ff9f9f;
+}
+
+.footer-links p {
+  margin: 6px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.footer-links p:hover {
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  opacity: 0.8;
+}

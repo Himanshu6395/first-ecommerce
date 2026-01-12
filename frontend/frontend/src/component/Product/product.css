@@ -1,0 +1,54 @@
+/* GRID – chhote cards ke liye */
+.product-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* pehle 3 tha */
+  gap: 12px;
+}
+
+/* CARD */
+.product-card {
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;            /* 👈 kam padding */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* hover */
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.product-image {
+  width: 100%;
+  height: 150px;            /* 👈 pehle 180 */
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+/* TITLE */
+.product-title {
+  font-size: 13px;          /* 👈 thoda chhota */
+  font-weight: 500;
+  color: #212121;
+  margin-bottom: 3px;
+  height: 34px;
+  overflow: hidden;
+}
+
+/* CATEGORY */
+.product-category {
+  font-size: 11px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+/* PRICE */
+.product-price {
+  font-size: 15px;          /* slightly smaller */
+  font-weight: 600;
+  color: #388e3c;
+}

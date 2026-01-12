@@ -1,0 +1,105 @@
+/* adminRegister.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.register-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.register-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.register-subtitle {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-card input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.register-card input:focus {
+  border-color: #ff7eb3;
+  box-shadow: 0 0 8px rgba(255, 126, 179, 0.4);
+}
+
+.register-card button {
+  padding: 12px 15px;
+  font-size: 16px;
+  background: #ff7eb3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-card button:hover {
+  background: #ff4a91;
+}
+
+.register-card button:disabled {
+  background: #ffb6c1;
+  cursor: not-allowed;
+}
+
+.register-card .error {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-text span {
+  color: #ff4a91;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.login-text span:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
